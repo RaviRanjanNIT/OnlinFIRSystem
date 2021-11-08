@@ -1,0 +1,98 @@
+﻿@model OnlinFIRSystem.Models.FIR
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details of Raised FIR</h2>
+
+<div>
+    <h4>FIR</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FIRNUMBER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FIRNUMBER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTimeFIR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTimeFIR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PoliceStationId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PoliceStationId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FIRAgainst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FIRAgainst)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Witnesses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Witnesses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FIRSTATUS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FIRSTATUS)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
