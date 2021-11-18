@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5967e167d48c4d23a3cda2ecdfdf4688" Name="Diagram1">
+        <EntityTypeShape EntityType="OnlineFIRModel.Role" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineFIRModel.UserDetail" Width="1.5" PointX="1.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineFIRModel.UserRoleMapping" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="OnlineFIRModel.FK_UserRoleMapping_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineFIRModel.FK_UserRoleMapping_UserDetails" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

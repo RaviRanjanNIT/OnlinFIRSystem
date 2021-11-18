@@ -70,7 +70,7 @@
         <div class="col-md-10">
             @*@Html.DropDownList("PSLIST", "Select Pin Code")*@
             @*@Html.DropDownList("PSLIST", (IEnumerable<SelectListItem>)ViewBag.PSLIST, "Select Pin Code", new { @class = "form-control" })*@
-            @Html.DropDownList("PSLIST", (IEnumerable<SelectListItem>)ViewBag.PSLIST, new { @class = "form-control" })
+            @Html.DropDownListFor(model => model.PoliceStationId, (IEnumerable<SelectListItem>)ViewBag.PSLIST, new { @class = "form-control" })
 
             @*@Html.ValidationMessageFor(model => model.PoliceStationId, "", new { @class = "text-danger" })*@
         </div>
@@ -113,7 +113,9 @@
         <div class="col-md-10">
             @*@Html.DropDownList("STLIST", "Select Status")*@
             @*@Html.DropDownList("STLIST", (IEnumerable<SelectListItem>)ViewBag.STLIST, "Select Status", new { @class = "form-control" })*@
-            @Html.DropDownList("STLIST", (IEnumerable<SelectListItem>)ViewBag.STLIST, new { @class = "form-control" })
+            @*@Html.DropDownListFor(model => model.FIRSTATUS, (IEnumerable<SelectListItem>)ViewBag.STLIST, new { @class = "form-control" })*@
+            @Html.DropDownListFor(model => model.FIRSTATUS, (SelectList)ViewBag.STLIST, new { @class = "form-control" })
+
 
             @*@Html.EditorFor(model => model.FIRSTATUS, new { htmlAttributes = new { @class = "form-control" } })
         @Html.ValidationMessageFor(model => model.FIRSTATUS, "", new { @class = "text-danger" })*@

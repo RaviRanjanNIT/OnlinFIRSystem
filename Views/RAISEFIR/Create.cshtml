@@ -63,13 +63,10 @@
             </div>
         </div>*@
 <div class="form-group">
-    @*@Html.LabelFor(model => model.PoliceStationId, htmlAttributes: new { @class = "control-label col-md-2" })*@
     <label class = "control-label col-md-2">Police Station</label>
     <div class="col-md-10">
-        @*@Html.DropDownList("PSLIST", "Select Pin Code")*@
         @Html.DropDownList("PSLIST", (IEnumerable<SelectListItem>)ViewBag.PSLIST, "Select Pin Code", new { @class = "form-control" })
 
-        @*@Html.ValidationMessageFor(model => model.PoliceStationId, "", new { @class = "text-danger" })*@
     </div>
 </div>
 
